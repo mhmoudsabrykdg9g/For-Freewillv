@@ -9,7 +9,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Properties;
 
-import ec.qa.autotest.ui.constants.CommonConstants;
+import ftnt.qa.autotest.ui.framework.constants.CommonConstants;
 
 public class InitPropertiesUtil {
 
@@ -54,14 +54,12 @@ public class InitPropertiesUtil {
 
 	/**
 	 * @author Lei.Wu
-	 * @param floderPath
-	 *            文件夹在工程中的路径
-	 * @param files
-	 *            存放文件的列表对象
+	 * @param floderPath 文件夹在工程中的路径
+	 * @param files 存放文件的列表对象
 	 * @see 递归获取此文件夹下的所有配置文件
 	 */
 
-	public ArrayList<File> getConfigFiles(File floderPath, ArrayList<File> files) {
+	public static ArrayList<File> getConfigFiles(File floderPath, ArrayList<File> files) {
 		for (File f : floderPath.listFiles()) {
 			if (f.isFile() && f.getName().endsWith(".properties")) {
 				files.add(f);
@@ -72,7 +70,7 @@ public class InitPropertiesUtil {
 		return files;
 	}
 
-	public ArrayList<File> getConfigFiles(File floderPath) {
+	public static ArrayList<File> getConfigFiles(File floderPath) {
 		ArrayList<File> files = new ArrayList<File>();
 		return getConfigFiles(floderPath, files);
 	}

@@ -4,8 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import ec.qa.autotest.ui.custom.annotation.PageObject;
-import ec.qa.autotest.ui.testbase.TestBase;
+import ftnt.qa.autotest.ui.framework.annotation.PageObject;
+import ftnt.qa.autotest.ui.testbase.TestBase;
 
 
 /**

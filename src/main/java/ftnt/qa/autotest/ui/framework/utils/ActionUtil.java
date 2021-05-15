@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 /**
  * 
- * @author xin.wang
+ * @author Lei.Wu
  * 模拟 鼠标，键盘的操作
  */
 

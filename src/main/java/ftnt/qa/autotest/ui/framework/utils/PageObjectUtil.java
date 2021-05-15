@@ -3,7 +3,7 @@ package ftnt.qa.autotest.ui.framework.utils;
 import java.util.HashMap;
 
 /**
- * @author xin.wang 获取页面对象的工具类
+ * @author Lei.Wu 获取页面对象的工具类
  */
 public class PageObjectUtil {
 

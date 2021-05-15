@@ -10,8 +10,8 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
-import ec.qa.autotest.ui.constants.CommonConstants;
-import ec.qa.autotest.ui.constants.PropertiesKeys;
+import ftnt.qa.autotest.ui.framework.constants.CommonConstants;
+import ftnt.qa.autotest.ui.framework.constants.PropertiesKeys;
 import ftnt.qa.autotest.ui.testbase.ITestBase;
 import ftnt.qa.autotest.ui.framework.testng.listener.RetryToRunCase;
 import ftnt.qa.autotest.ui.framework.utils.CookiesUtil;

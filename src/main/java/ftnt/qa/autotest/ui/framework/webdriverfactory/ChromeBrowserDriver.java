@@ -5,7 +5,7 @@ import java.io.File;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 
-import ec.qa.autotest.ui.constants.CommonConstants;
+import ftnt.qa.autotest.ui.framework.constants.CommonConstants;
 import ftnt.qa.autotest.ui.framework.interfaces.IBrowserDriverBase;
 
 public class ChromeBrowserDriver implements IBrowserDriverBase {

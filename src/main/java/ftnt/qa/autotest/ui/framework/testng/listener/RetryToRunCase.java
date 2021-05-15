@@ -3,7 +3,7 @@ package ftnt.qa.autotest.ui.framework.testng.listener;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-import ec.qa.autotest.ui.constants.CommonConstants;
+import ftnt.qa.autotest.ui.framework.constants.CommonConstants;
 import ftnt.qa.autotest.ui.testbase.TestBase;
 
 /**

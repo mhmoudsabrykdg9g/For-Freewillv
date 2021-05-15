@@ -2,7 +2,7 @@ package ftnt.qa.autotest.ui.framework.webdriverfactory;
 
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import ec.qa.autotest.ui.constants.CommonConstants;
+import ftnt.qa.autotest.ui.framework.constants.CommonConstants;
 import ftnt.qa.autotest.ui.framework.interfaces.IBrowserDriverBase;
 
 public class IEBrowserDriver implements IBrowserDriverBase {
