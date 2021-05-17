@@ -10,7 +10,7 @@ import ftnt.qa.autotest.ui.framework.annotation.PageObject;
 import ftnt.qa.autotest.ui.testbase.TestBase;
 
 /**
- * @author xin.wang 
+ * @author Lei.Wu 
  * 1.模拟IOC容器 通过反射扫描配置好的pageobject包并将 pageobject实例存放到全局静态MAP中。
  * 2.实现了依赖注入功能 DI
  */
@@ -57,7 +57,7 @@ public class InitPageObject {
 	}
 
 /**
- * @author xin.wang
+ * @author Lei.Wu
  * @param fields
  * @param pageobjs
  * @throws IllegalArgumentException
