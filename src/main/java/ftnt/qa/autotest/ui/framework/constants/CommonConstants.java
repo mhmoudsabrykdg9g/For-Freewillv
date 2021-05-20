@@ -10,8 +10,8 @@ public class CommonConstants {
 	
 	public static final Integer RETRY_COUNT=3;
 	
-	public static final String  CONFIG_FOLDER_PATH_KEY="123";
-	public static final String  CONFIG_FOLDER_PATH_VALUE="123";
+	public static final String  CONFIG_FOLDER_PATH_KEY="/common-config";
+	public static final String  CONFIG_FOLDER_PATH_VALUE="framework.properties";
 	
 	public static final String  KILL_DRIVER_PROCESS_BAT="123";
 }
