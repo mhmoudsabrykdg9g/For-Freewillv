@@ -2,7 +2,7 @@ package ftnt.qa.autotest.ui.dao;
 
 import java.util.List;
 
-import ec.qa.autotest.ui.dao.model.SupplierInfo;
+import ftnt.qa.autotest.ui.dao.model.SupplierInfo;
 
 public interface SupplierOperationDao {
 
