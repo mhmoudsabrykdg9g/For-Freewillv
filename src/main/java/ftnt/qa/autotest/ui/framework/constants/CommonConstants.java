@@ -1,12 +1,14 @@
 package ftnt.qa.autotest.ui.framework.constants;
 
 public class CommonConstants {
-	public static final String  IE_DRIVER_FIELD="123";
-	public static final String  IE_DRIVER_PATH="123";
+	public static final String  IE_DRIVER_FIELD="webdriver.ie.driver";
+	public static final String  IE_DRIVER_PATH="/BrowserDriver/IEDriverServer.exe";
 	
-	public static final String  CHROME_DRIVER_FIELD="123";
-	public static final String  CHROME_DRIVER_PATH="123";
+	public static final String  CHROME_DRIVER_FIELD="webdriver.chrome.driver";
+	public static final String  CHROME_DRIVER_PATH="/BrowserDriver/chromedriver.exe";
 	
+	public static final String  FIREFOX_DRIVER_FIELD="webdriver.gecko.driver";
+	public static final String  FIREFOX_DRIVER_PATH="/BrowserDriver/geckodriver.exe";
 	
 	public static final Integer RETRY_COUNT=3;
 	
