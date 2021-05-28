@@ -15,13 +15,14 @@ import ftnt.qa.autotest.ui.framework.constants.PropertiesKeys;
 import ftnt.qa.autotest.ui.testbase.ITestBase;
 import ftnt.qa.autotest.ui.framework.testng.listener.RetryToRunCase;
 import ftnt.qa.autotest.ui.framework.utils.CookiesUtil;
-import ftnt.qa.autotest.ui.framework.utils.ExcuteDOSCommand;
+import ftnt.qa.autotest.ui.framework.utils.ExcuteBatCommand;
 import ftnt.qa.autotest.ui.framework.utils.PageObjectUtil;
 import ftnt.qa.autotest.ui.framework.utils.PictureUtil;
 import ftnt.qa.autotest.ui.framework.utils.PropertiesUtil;
 import ftnt.qa.autotest.ui.framework.utils.InitPageObject;
+import ftnt.qa.autotest.ui.framework.utils.InitPropertiesUtil;
 
-public abstract class TestBase implements ITestBase {
+public abstract  class TestBase implements ITestBase {
 	protected static RemoteWebDriver webDriver;
 	protected static String browserType;
 	public static boolean success = true;
@@ -37,7 +38,7 @@ public abstract class TestBase implements ITestBase {
 	public void initTest(XmlTest xt,ITestContext tc) throws Exception {
 		System.setProperty(CommonConstants.CONFIG_FOLDER_PATH_KEY, CommonConstants.CONFIG_FOLDER_PATH_VALUE);
 		if (null == PropertiesUtil.getProKVMap()) {
-			new Root();
+			new InitPropertiesUtil();
 		}
 		PictureUtil.setBaseUrl(System.getProperty("user.dir") + PropertiesUtil.getProValue("testcase.testpic.path"));
 		browserType = PropertiesUtil.getProValue(PropertiesKeys.BROWSER_TYPE).toString();
@@ -72,7 +73,7 @@ public abstract class TestBase implements ITestBase {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			ExcuteDOSCommand.excuteBATFile(CommonConstants.KILL_DRIVER_PROCESS_BAT);
+			ExcuteBatCommand.executeBatFile(CommonConstants.KILL_DRIVER_PROCESS_BAT);
 		}
 	}
 
@@ -85,13 +86,14 @@ public abstract class TestBase implements ITestBase {
 	}
 
 	private void configDriver(ConfigDriverParameters cp) throws Exception {
-		webDriver = Root.wf.getDriver(browserType);
+		webDriver = new DriverFactory().getDriver(browserType);
 		new InitPageObject(this);
 		webDriver.manage().timeouts().implicitlyWait(cp.getSerachElementTime(), TimeUnit.SECONDS);
 		webDriver.manage().window().maximize();
 		webDriver.manage().timeouts().pageLoadTimeout(cp.getPageLoadTime(), TimeUnit.SECONDS);
 	}
 
+	@SuppressWarnings("unused")
 	private void displayTipInfo(String website, Method m) {
 		if (!success) {
 			System.out.println("\n=======测试用例准备重试=======");
