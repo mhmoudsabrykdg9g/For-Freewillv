@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="159" started-at="2018-02-07T06:53:30Z" finished-at="2018-02-07T06:53:30Z">
+  <suite name="Suite" duration-ms="281" started-at="2018-02-07T09:47:00Z" finished-at="2018-02-07T09:47:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="159" started-at="2018-02-07T06:53:30Z" finished-at="2018-02-07T06:53:30Z">
+    <test name="Test" duration-ms="281" started-at="2018-02-07T09:47:00Z" finished-at="2018-02-07T09:47:00Z">
       <class name="ftnt.qa.autotest.ui.fortisiem.testcases.NewTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ftnt.qa.autotest.ui.fortisiem.testcases.NewTest@12f41634]" name="beforeSuite" is-config="true" duration-ms="36" started-at="2018-02-07T06:53:30Z" finished-at="2018-02-07T06:53:30Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:ftnt.qa.autotest.ui.fortisiem.testcases.NewTest@7ce6a65d]" name="beforeSuite" is-config="true" duration-ms="140" started-at="2018-02-07T09:46:59Z" finished-at="2018-02-07T09:47:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="f()[pri:0, instance:ftnt.qa.autotest.ui.fortisiem.testcases.NewTest@12f41634]" name="f" duration-ms="17" started-at="2018-02-07T06:53:30Z" finished-at="2018-02-07T06:53:30Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:ftnt.qa.autotest.ui.fortisiem.testcases.NewTest@7ce6a65d]" name="f" duration-ms="6" started-at="2018-02-07T09:47:00Z" finished-at="2018-02-07T09:47:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- ftnt.qa.autotest.ui.fortisiem.testcases.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

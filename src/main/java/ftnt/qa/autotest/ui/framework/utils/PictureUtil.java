@@ -2,7 +2,7 @@ package ftnt.qa.autotest.ui.framework.utils;
 
 
 /**
- * @author xin.wang
+ * @author Lei.Wu
  * 获取测试图片地址
  */
 
